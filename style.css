@@ -1,0 +1,452 @@
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+ 
+    /* Хедер */
+     .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .header span {
+          font-size: 35px;
+          color: rgb(216, 211, 203);
+     }
+
+     .header__left {
+        display: flex;  
+        margin:10px;
+     }
+ 
+     .header__left span{
+          display: none;  
+       }
+
+       .header-logo__left img {
+          padding-left: 20px;
+          height: 50px;
+          width: 96px;
+       }
+
+
+
+     .header__right {
+          display: flex;
+          margin:10px;
+     }
+
+      .header__right span {
+         display: none;
+      }
+
+     .header-info__right {
+          display: none;
+     }
+
+     .header-repair__right span {
+          display: none;
+     }
+
+     .header-repair__right {
+          padding-right: 15px;
+     }
+
+     .header-chekstatus__right span {
+          display: none;
+     }
+
+
+     /* Основная часть */
+
+     .main {
+          background: #F8F8F8;
+     }
+     .main  .main_serves h1 {
+       margin-left: 6px; 
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+       font-size: 30px;
+
+     }
+
+     .main_serves div {
+          display: none;
+       }
+  
+
+     .main__link {
+        display: flex; 
+        white-space: pre; 
+        overflow-x: scroll;
+     }
+
+     .main__link a{
+        text-decoration: none;
+        color: rgb(143, 142, 142);
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+     }
+
+     .main__link a:hover {
+        background: white; 
+        height: 10px; 
+     }
+     
+
+     .main__description {
+          position: relative;
+     }
+
+     .main__description > p{
+          display: none;
+     }
+
+     .main__description article div:first-child {
+          margin-left: 10px;
+      } 
+
+     .main__description article div:last-child {
+         display: none;
+     } 
+
+     .main__description h3 {
+          margin-left: 30px;
+          font-weight: 200;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     }
+
+     .main__description img {
+       position: absolute;
+       top: 140px;
+        
+     } 
+}
+
+/* Для 769px */
+
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+
+     .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+       }
+  
+       .header > span {
+            display: none;
+       }
+  
+      
+
+       .header__left {
+          display: flex;
+          align-items: center;  
+          margin:10px;
+       }
+
+       .header__left span{ 
+          font-size: 35px;
+          color: rgb(216, 211, 203);
+           margin-left: 20px;
+           margin-bottom: 10px;
+         }
+  
+         .header-logo__left img {
+            padding-left: 20px;
+            height: 50px;
+            width: 96px;
+         }
+  
+  
+  
+       .header__right {
+            display: flex;
+            margin:10px;
+       }
+  
+        .header__right span {
+           /* display: none; */
+           font-size: 35px;
+          color: rgb(216, 211, 203);
+          margin-right: 30px;
+        }
+  
+       .header-info__right {
+            margin-right: 40px;
+       }
+       .header-info__right img {
+          margin-left: 10px;
+       }
+
+  
+       .header-repair__right span {
+            display: none;
+       }
+  
+       .header-repair__right {
+            padding-right: 15px;
+       }
+  
+       .header-chekstatus__right {
+          margin-right: 10px;
+       }
+
+       .header-chekstatus__right span {
+            display: none;
+       }
+  
+  
+       /* Основная часть */
+  
+       .main {
+            background: #F8F8F8;
+            
+       }
+       .main .main_serves h1 {
+         margin-left: 6px; 
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+         font-size: 30px;
+         padding-top: 20px;
+         margin-left: 15px;
+       }
+
+       .main_serves div {
+          display: none;
+       }
+  
+       .main__link {
+          display: flex; 
+          white-space: pre; 
+          overflow-x: scroll;
+       }
+  
+       .main__link a{
+          text-decoration: none;
+          color: rgb(143, 142, 142);
+          margin: 10px;
+          padding: 10px;
+          font-size: 16px;
+          padding-left: 25px;
+       }
+  
+       .main__link a:hover {
+          background: white; 
+          height: 10px; 
+       }
+       
+  
+       .main__description {
+           position: relative;
+           padding-bottom: 20px;
+       }
+
+       .main__description > p{
+            display: none;
+       }
+  
+       .main__description article div:first-child {
+            margin-left: 20px;
+        } 
+  
+       .main__description article div:last-child {
+          margin-left: 20px;
+       } 
+  
+       .main__description h3 {
+            margin-left: 30px;
+            font-weight: 200;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+
+       .main__description img {
+          float: right;
+          height: 200px;
+          margin-left: 20px;
+       }
+
+       .main__description div {
+          width:300px;
+       }
+
+       .main__description div p > span {
+          display: none;
+       }
+  }
+
+
+  /* Для 1120px */
+
+
+@media screen and (min-width: 1120px) and (max-width: 1920px) {
+
+     .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          display: none;
+           margin: 0;
+          padding: 0;
+              
+       }
+  
+       .header > span {
+            display: none;
+       }
+  
+      
+
+       .header__left {
+          display: flex;
+          align-items: center;  
+          margin:10px;
+       }
+
+       .header__left span{ 
+          font-size: 35px;
+          color: rgb(216, 211, 203);
+           margin-left: 20px;
+           margin-bottom: 10px;
+         }
+  
+         .header-logo__left img {
+            padding-left: 20px;
+            height: 50px;
+            width: 96px;
+         }
+  
+  
+  
+       .header__right {
+            display: flex;
+            margin:10px;
+       }
+  
+        .header__right span {
+           /* display: none; */
+           font-size: 35px;
+          color: rgb(216, 211, 203);
+          margin-right: 30px;
+        }
+  
+       .header-info__right {
+            margin-right: 40px;
+       }
+       .header-info__right img {
+          margin-left: 10px;
+       }
+
+  
+       .header-repair__right span {
+            display: none;
+       }
+  
+       .header-repair__right {
+            padding-right: 15px;
+       }
+  
+       .header-chekstatus__right {
+          margin-right: 10px;
+       }
+
+       .header-chekstatus__right span {
+            display: none;
+       }
+  
+  
+       /* Основная часть */
+  
+       
+       .main {
+            background: #F8F8F8;
+              
+            
+       }
+       .main h1 {
+         margin-left: 6px; 
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+         font-size: 30px;
+         padding-top: 20px;
+         margin-left: 15px;
+       }
+
+       .main_serves {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+       }
+
+       .main_serves div {
+          display: flex;
+          align-items: center;
+          margin-right: 15px;
+       }
+
+       .main_serves div span {
+          margin-right: 10px;
+          font-size: 18px;
+       }
+
+       
+   
+       .main__link {
+          display: flex; 
+          white-space: pre; 
+          overflow-x: scroll;
+       }
+  
+       .main__link a{
+          text-decoration: none;
+          color: rgb(143, 142, 142);
+          margin: 10px;
+          padding: 10px;
+          font-size: 16px;
+          padding-left: 25px;
+       }
+  
+       .main__link a:hover {
+          background: white; 
+          height: 10px; 
+       }
+       
+  
+       .main__description {
+           position: relative;
+           padding-bottom: 20px;
+       }
+
+       .main__description > p{
+            /* display: none; */
+            margin-left: 35px;
+           
+       }
+  
+       .main__description article div:first-child {
+            margin-left: 20px;
+        } 
+  
+       .main__description article div:last-child {
+          margin-left: 20px;
+       } 
+  
+       .main__description h3 {
+            margin-left: 30px;
+            font-weight: 200;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+
+
+       .main__description img {
+          float: right;
+          height: 280px;
+       }
+
+       .main__description div {
+          width:500px;
+       }
+
+       .main__description div p > span {
+          
+       }
+  }
+
