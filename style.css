@@ -1,3 +1,23 @@
+* {
+   padding: 0;
+   margin: 0;
+   /* box-sizing: border-box; */
+}
+
+@font-face {
+   font-family: 'TTLakesCompressed-Black';
+   src: url('/font/TTLakesCompressed-Black.ttf'); 
+}
+
+@font-face {
+   font-family: 'TTLakesCompressed-Medium';
+   src: url('/font/TTLakes-Medium.ttf');
+}
+
+@font-face {
+   font-family: 'TTLakesCompressed-Bold';
+   src: url('/font/TTLakesCondensed-Bold.ttf');
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
  
@@ -11,11 +31,13 @@
      .header span {
           font-size: 35px;
           color: rgb(216, 211, 203);
+          margin-right: 20px;
      }
 
      .header__left {
         display: flex;  
-        margin:10px;
+        align-items: center;
+        margin: 15px;
      }
  
      .header__left span{
@@ -32,7 +54,8 @@
 
      .header__right {
           display: flex;
-          margin:10px;
+          align-items: center;
+          padding-right: 15px;
      }
 
       .header__right span {
@@ -47,8 +70,8 @@
           display: none;
      }
 
-     .header-repair__right {
-          padding-right: 15px;
+     .header-repair__right img {
+          padding-right: 14px;
      }
 
      .header-chekstatus__right span {
@@ -60,12 +83,14 @@
 
      .main {
           background: #F8F8F8;
+          height: 100vh;
      }
-     .main  .main_serves h1 {
-       margin-left: 6px; 
-       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-       font-size: 30px;
 
+     .main  .main_serves h1 {
+       padding: 15px;
+       font-family: 'TTLakesCompressed-Bold';  
+       font-size: 28px;
+          
      }
 
      .main_serves div {
@@ -75,14 +100,19 @@
 
      .main__link {
         display: flex; 
+        align-items: center;
         white-space: pre; 
-        overflow-x: scroll;
+        overflow-x: auto;
+        margin-left: 30px;
+        padding-bottom: 20px;
      }
 
      .main__link a{
         text-decoration: none;
         color: rgb(143, 142, 142);
-        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
         font-size: 16px;
      }
@@ -90,6 +120,8 @@
      .main__link a:hover {
         background: white; 
         height: 10px; 
+        border: 2px solid  #B8FFEC;
+        border-radius: 4px;
      }
      
 
@@ -102,7 +134,10 @@
      }
 
      .main__description article div:first-child {
-          margin-left: 10px;
+          margin-left: 20px;
+          width: 280px;
+          font-family: 'TTLakesCompressed-Medium'; 
+          font-size: 14px;
       } 
 
      .main__description article div:last-child {
@@ -112,12 +147,16 @@
      .main__description h3 {
           margin-left: 30px;
           font-weight: 200;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-family: 'TTLakesCompressed-Medium'; 
+          font-size: 16px;
+          margin-top: 15px;
+          margin-left: 50px;
      }
 
      .main__description img {
        position: absolute;
-       top: 140px;
+       margin-top: 150px;
+       padding-bottom: 30px;
         
      } 
 }
@@ -142,7 +181,7 @@
        .header__left {
           display: flex;
           align-items: center;  
-          margin:10px;
+          margin: 15px 0 15px 20px;
        }
 
        .header__left span{ 
@@ -162,7 +201,7 @@
   
        .header__right {
             display: flex;
-            margin:10px;
+            margin: 15px 30px 15px 0px;
        }
   
         .header__right span {
@@ -201,14 +240,13 @@
   
        .main {
             background: #F8F8F8;
+            height: 100vh;
             
        }
        .main .main_serves h1 {
-         margin-left: 6px; 
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-         font-size: 30px;
-         padding-top: 20px;
-         margin-left: 15px;
+         padding: 25px;
+         font-family: 'TTLakesCompressed-Bold';  
+         font-size: 28px;
        }
 
        .main_serves div {
@@ -216,24 +254,30 @@
        }
   
        .main__link {
-          display: flex; 
-          white-space: pre; 
-          overflow-x: scroll;
-       }
-  
-       .main__link a{
-          text-decoration: none;
-          color: rgb(143, 142, 142);
-          margin: 10px;
-          padding: 10px;
-          font-size: 16px;
-          padding-left: 25px;
-       }
-  
-       .main__link a:hover {
-          background: white; 
-          height: 10px; 
-       }
+         display: flex; 
+         align-items: center;
+         white-space: pre; 
+         overflow-x: auto;
+         margin-left: 30px;
+         padding-bottom: 20px;
+      }
+ 
+      .main__link a{
+         text-decoration: none;
+         color: rgb(143, 142, 142);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 10px;
+         font-size: 16px;
+      }
+ 
+      .main__link a:hover {
+         background: white; 
+         height: 10px; 
+         border: 2px solid  #B8FFEC;
+         border-radius: 4px;
+      }
        
   
        .main__description {
@@ -246,23 +290,35 @@
        }
   
        .main__description article div:first-child {
-            margin-left: 20px;
-        } 
+         margin-top: 20px;
+         margin-left: 20px;
+         width: 310px;
+         font-family: 'TTLakesCompressed-Medium'; 
+         font-size: 14px;
+     } 
   
-       .main__description article div:last-child {
+        .main__description article div:last-child {
+         margin-top: 20px;
           margin-left: 20px;
-       } 
+          width: 310px;
+         font-family: 'TTLakesCompressed-Medium'; 
+          font-size: 14px;
+     } 
   
        .main__description h3 {
-            margin-left: 30px;
-            font-weight: 200;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         margin-left: 30px;
+         font-weight: 200;
+         font-family: 'TTLakesCompressed-Medium'; 
+         font-size: 16px;
+         margin-top: 15px;
+         margin-left: 50px;
        }
 
        .main__description img {
           float: right;
           height: 200px;
           margin-left: 20px;
+          
        }
 
        .main__description div {
@@ -359,21 +415,22 @@
        
        .main {
             background: #F8F8F8;
-              
+            height: 100vh;  
             
        }
        .main h1 {
-         margin-left: 6px; 
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-         font-size: 30px;
-         padding-top: 20px;
-         margin-left: 15px;
+         padding: 25px;
+         padding-top: 40px;
+         font-family: 'TTLakesCompressed-Bold';  
+         font-size: 28px;
+         padding-left: 40px;
        }
 
        .main_serves {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          
        }
 
        .main_serves div {
@@ -388,27 +445,31 @@
        }
 
        
-   
        .main__link {
-          display: flex; 
-          white-space: pre; 
-          overflow-x: scroll;
-       }
-  
-       .main__link a{
-          text-decoration: none;
-          color: rgb(143, 142, 142);
-          margin: 10px;
-          padding: 10px;
-          font-size: 16px;
-          padding-left: 25px;
-       }
-  
-       .main__link a:hover {
-          background: white; 
-          height: 10px; 
-       }
-       
+         display: flex; 
+         align-items: center;
+         white-space: pre; 
+         overflow-x: auto;
+         margin-left: 40px;
+         padding-bottom: 20px;
+      }
+ 
+      .main__link a{
+         text-decoration: none;
+         color: rgb(143, 142, 142);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 10px;
+         font-size: 16px;
+      }
+ 
+      .main__link a:hover {
+         background: white; 
+         height: 10px; 
+         border: 2px solid  #B8FFEC;
+         border-radius: 4px;
+      }
   
        .main__description {
            position: relative;
@@ -417,28 +478,41 @@
 
        .main__description > p{
             /* display: none; */
-            margin-left: 35px;
+            margin-left: 50px;
            
        }
   
        .main__description article div:first-child {
-            margin-left: 20px;
-        } 
+         margin-top: 20px;
+         margin-left: 30px;
+         width: 500px;
+         font-family: 'TTLakesCompressed-Medium'; 
+         font-size: 14px;
+     } 
   
-       .main__description article div:last-child {
-          margin-left: 20px;
-       } 
+        .main__description article div:last-child {
+         margin-top: 20px;
+          margin-left: 30px;
+          width: 500px;
+         font-family: 'TTLakesCompressed-Medium'; 
+          font-size: 14px;
+     } 
+  
   
        .main__description h3 {
-            margin-left: 30px;
-            font-weight: 200;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         margin-left: 30px;
+         font-weight: 200;
+         font-family: 'TTLakesCompressed-Medium'; 
+         font-size: 16px;
+         margin-top: 15px;
+         margin-left: 50px;
        }
 
 
        .main__description img {
           float: right;
           height: 280px;
+          width: 520px;
        }
 
        .main__description div {
