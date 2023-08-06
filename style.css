@@ -19,6 +19,20 @@
   src: url("/font/TTLakesCondensed-Bold.ttf");
 }
 
+.main-first__link {
+  border-radius: 6px;
+  box-sizing: content-box;
+ 
+  background: #fff;
+  padding: 8px 9px 8px 16px;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #7e7e82;
+    font-size: 16px;
+    font-family: "TTLakesCompressed-Medium";
+}
+
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .header-left__separator,
   .header-info__right,
@@ -256,14 +270,14 @@
   }
 
   .main__description article div:first-child {
-    padding-left: 16px;
+    padding-left: 24px;
     font-size: 14px;
     width: 310px;
     font-family: "TTLakesCompressed-Medium";
   }
 
   .main-text__description > p {
-    padding-left: 16px;
+    padding-left: 24px;
     padding-top: 16px;
     font-size: 14px;
     width: 310px;
@@ -409,10 +423,7 @@
   .main__link a {
     margin-top: 17px;
     margin-left: 8px;
-    padding-top: 10px;
-    padding-left: 16px;
-    padding-bottom: 10px;
-    padding-right: 16px;
+    padding: 10px 16px;
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
     text-decoration: none;
