@@ -25,23 +25,23 @@ let text = document.querySelector('.main .text');
 console.log(text)
 
 
-// burger.addEventListener('click', () => {
-//    counter++;
-//    if(counter %2 == 1) {
-//     modal.style.display = "block";
-//     CPS.style.position = "static"
+burger.addEventListener('click', () => {
+   counter++;
+   if(counter %2 == 1) {
+    modal.style.display = "block";
+    CPS.style.position = "static"
     
-//    } 
+   } 
 
-//    exit.addEventListener('click', () => {
-//     counter++;
-//     if(counter %2 == 0) {
-//     modal.style.display = "none";
-//     CPS.style.position = "absolute"
-//      }
+   exit.addEventListener('click', () => {
+    counter++;
+    if(counter %2 == 0) {
+    modal.style.display = "none";
+    CPS.style.position = "absolute"
+     }
    
-//    })
+   })
    
-// })
+})
 
 console.log(CPS)
