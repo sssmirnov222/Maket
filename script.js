@@ -22,6 +22,10 @@ let burger = document.querySelector('.header .header__left .header-burger__left 
 let exit = document.querySelector('.header__modal .header-head__modal .exit')
 let CPS = document.querySelector('.main .main__description img')
 let text = document.querySelector('.main .text');
+let body = document.body;
+let main = document.querySelector('.main');
+let header = document.querySelector('.header');
+
 console.log(text)
 
 
@@ -29,15 +33,18 @@ burger.addEventListener('click', () => {
    counter++;
    if(counter %2 == 1) {
     modal.style.display = "block";
-    CPS.style.position = "static"
-    
+    CPS.style.position = "static";
+    main.style.opacity = "0.2";
+    header.style.opacity = "0.2";
    } 
 
    exit.addEventListener('click', () => {
     counter++;
     if(counter %2 == 0) {
     modal.style.display = "none";
-    CPS.style.position = "absolute"
+    CPS.style.position = "absolute";
+    main.style.opacity = "1";
+    header.style.opacity = "1";
      }
    
    })
