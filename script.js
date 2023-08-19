@@ -18,7 +18,7 @@ link_index.forEach(el => {
 
 
 let modal = document.querySelector('.header__modal');
-let burger = document.querySelector('.header .header__left .header-burger__left img')
+let burger = document.querySelector('.wrapper .header .header__left .header-burger__left img')
 let exit = document.querySelector('.header__modal .header-head__modal .exit')
 let CPS = document.querySelector('.main .main__description img')
 let text = document.querySelector('.main .text');
@@ -36,6 +36,7 @@ burger.addEventListener('click', () => {
     CPS.style.position = "static";
     main.style.opacity = "0.2";
     header.style.opacity = "0.2";
+    body.style.overflowY = "hidden";
    } 
 
    exit.addEventListener('click', () => {

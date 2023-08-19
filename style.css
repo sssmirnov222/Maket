@@ -528,9 +528,6 @@
 /*Модальное окно */
 @media screen and (min-height: 677px) and (max-height: 1119px) {
     
-    body {
-      overflow-y: hidden;
-    }
 
     .header__modal {
       background: #FFF;
@@ -659,7 +656,6 @@
 @media screen and (min-height: 1120px) and (max-height: 1925px) {
     
       body {
-        overflow-y: hidden;
         display: flex;
       }
   
@@ -788,9 +784,6 @@
   
  @media screen and (min-height: 0px) and (max-height: 676px) {
     
-         body {
-         overflow-y: hidden;
-        } 
     
     
         .header__modal {
