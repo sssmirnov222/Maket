@@ -52,3 +52,77 @@ burger.addEventListener('click', () => {
 })
 
 console.log(CPS)
+
+
+
+let down = document.querySelector('.main__servicbrands .down');
+let up = document.querySelector('.main__servicbrands .up');
+let lenovo = document.querySelector('.main__servicbrands .main-devices .lenovo_two');
+let samsung = document.querySelector('.main__servicbrands .main-devices .Samsung_two');
+let apple = document.querySelector('.main__servicbrands .main-devices .Apple_two');
+
+down.addEventListener("click", () => {
+  counter+=1;
+  if(counter === 1) {
+   lenovo.style.display = "inline-block";
+    samsung.style.display = "inline-block";
+    apple.style.display = "inline-block";
+    up.style.display = "flex"
+    down.style.display = "none";
+   }   
+})
+
+up.addEventListener("click", () => {
+  counter = 0;
+  if(counter === 0) {
+
+ lenovo.style.display = "none";
+    samsung.style.display = "none";
+    apple.style.display = "none";
+    up.style.display = "none"
+    down.style.display = "flex";
+   } 
+})
+
+
+//слайдер
+let swiper = new Swiper('.swiper-container', {
+  //  slidesPerView: 3,
+
+  //  pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  // },
+
+  pagination: {
+    el: '.pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `<span class="dot swiper-pagination-bullet">${index}</span>`;
+    },
+  },
+  breakpoints: {
+
+    0: {
+      slidesPerView:1,
+      spaceBetween: 10
+    },
+    320: {
+      slidesPerView:1,
+      spaceBetween: 16
+    },
+
+    430: {
+      slidesPerView:2,
+      spaceBetween: 16
+    },
+
+    600: {
+      slidesPerView:3,
+      spaceBetween: 16
+    },
+    
+  }
+});
+
+
