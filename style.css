@@ -1098,6 +1098,9 @@
   margin-top: 16px;
 }
 
+body > div > main > section > section > div.slider-container > div > div.swiper-wrapper > div.lenovo.swiper-slide.card.swiper-slide-active {
+  width: 100px !important;
+}
 
 .main-devices div img {
   padding-top: 20px;
