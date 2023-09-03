@@ -38,6 +38,7 @@ burger.addEventListener('click', () => {
     body.style.overflowY = "hidden";
    } 
 
+
    exit.addEventListener('click', () => {
     counter = 0;
     if(counter === 0) {
@@ -46,8 +47,8 @@ burger.addEventListener('click', () => {
     header.style.opacity = "1";
     body.style.overflowY = "auto";
      }
-   
-   })
+   }
+   )
    
 })
 
@@ -87,42 +88,82 @@ up.addEventListener("click", () => {
 
 //слайдер
 let swiper = new Swiper('.swiper-container', {
-  //  slidesPerView: 3,
-
-  //  pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'bullets',
-  // },
-
-  pagination: {
-    el: '.pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return `<span class="dot swiper-pagination-bullet">${index}</span>`;
-    },
+  //  slidesPerView: 2,
+  //  slideClass: "slide",
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
   },
+
   breakpoints: {
 
     0: {
-      slidesPerView:1,
+      slidesPerView:2,
       spaceBetween: 10
     },
+
     320: {
-      slidesPerView:1,
+      slidesPerView:1.3,
       spaceBetween: 16
     },
-
-    430: {
-      slidesPerView:2,
-      spaceBetween: 16
-    },
-
-    600: {
-      slidesPerView:3,
-      spaceBetween: 16
-    },
-    
   }
 });
 
 
+
+//feedback
+let call = document.querySelector(".header__modal .footer .header-foot__modal .call")
+let feedback = document.querySelector(".header__feedback")
+let back = document.querySelector(".header-back__feedback")
+console.log(back)
+
+
+call.addEventListener("click", () =>  {
+  counter+=1;
+  if(counter === 1) {
+   feedback.style.display = "block" 
+   feedback.style.opacity = "1";
+   main.style.opacity = "0.1";
+   modal.style.opacity = "0.1";
+  }
+  
+  back.addEventListener("click", () => {
+  counter = 0;
+  if(counter === 0)  {
+   feedback.style.display = "none";
+   main.style.opacity = "1";
+   modal.style.opacity = "1";
+    }
+  })
+
+ }
+)
+
+
+// call
+let chat = document.querySelector(".header__modal .footer .header-foot__modal .Chat")
+let headerCall = document.querySelector(".header__call")
+let headerBack = document.querySelector(".header-back__call")
+console.log(back)
+
+
+chat.addEventListener("click", () =>  {
+  counter+=1;
+  if(counter === 1) {
+   headerCall.style.display = "block" 
+   headerCall.style.opacity = "1";
+   main.style.opacity = "0.1";
+   modal.style.opacity = "0.1";
+  }
+  
+  headerBack.addEventListener("click", () => {
+  counter = 0;
+  if(counter === 0)  {
+   headerCall.style.display = "none";
+   main.style.opacity = "1";
+   modal.style.opacity = "1";
+    }
+  })
+
+ }
+)
