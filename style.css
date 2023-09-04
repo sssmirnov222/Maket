@@ -1171,6 +1171,7 @@
     text-transform:uppercase;
   }
   
+  
   .main-devices{
    display: grid;
    grid-template-columns: 224px 224px 224px 224px;
@@ -1179,7 +1180,7 @@
    padding-left: 24px;
   }
   
-  .main-devices div {
+  .main-devices > div {
    background: white;
    /* border: 2px solid black; */
    display: flex;
@@ -1192,7 +1193,12 @@
     margin-top: 16px;
   }
   
-  
+  .main-devices >.lenovo_two,
+  .main-devices > .Samsung_two,
+  .main-devices > .Apple_two {
+    display: none;
+  }
+
   .main-devices div img {
     padding: 20px 16px 20px 16px;
   }
@@ -1201,11 +1207,11 @@
     display: flex;
   }
   .down {
-    display: none;
     margin-top: 32px;
   }
   .up {
      margin-top: 46px;
+     display: none;
   }
 
   
