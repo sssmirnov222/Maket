@@ -37,6 +37,9 @@
   border-bottom: 1px solid #D9FFF5;;
 }
 
+button {
+  border: none;
+}
 
 /* ОСНОВА */
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -581,7 +584,7 @@
       top: 0;
       left: 0;
       z-index: 222;
-      height: 100vh;
+      height: 106vh;
       display: none;
     }
     
@@ -826,7 +829,7 @@
           top: 0;
           left: 0;
           z-index: 222;
-          height: 100vh;
+          height: 106vh;
           display: none;
         }
         
@@ -1111,13 +1114,14 @@
   }
 
    .blur {
-    height: 80px;
-    width: 30px;
+    height: 75px;
+    width: 20px;
+    margin-top: 15px;
     position: absolute;
-    background: #f1eeee;
-    opacity: 0.7;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+    opacity: 0.8;
     right: 0;
-    z-index: 1;    
+    z-index: 222;    
    }
 
   
@@ -1266,6 +1270,11 @@
   margin-top: 16px;
 }
 
+.main-devices >.lenovo_two,
+.main-devices > .Samsung_two,
+.main-devices > .Apple_two {
+  display: none;
+}
 
 .main-devices div img {
   padding-top: 20px;
@@ -1278,12 +1287,14 @@
   display: flex;
 }
 .down {
-  display: none;
   margin-top: 32px;
 }
 .up {
    margin-top: 46px;
+   display: none;
 }
+
+
  }
  
 
@@ -1294,7 +1305,7 @@
 
 
 
-/* blok 1.6  */
+/* blok 1.6  ремонт различных видов техники*/
 @media screen and (min-width: 1120px) and (max-width: 2800px) { 
 
 .main__technik {
@@ -1486,6 +1497,16 @@ padding-left: 24px;
      text-transform:uppercase;
  }
  
+ .blur_technik {
+  height: 200px;
+  width: 20px;
+  margin-top: 15px;
+  position: absolute;
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+  opacity: 0.8;
+  right: 0;
+  z-index: 222; 
+ }
 
  
   .main-heder__technik h3 {
@@ -1911,9 +1932,50 @@ hr {
        font-family: "TTLakesCompressed-Meduim";
     }
     
-    /* .ravs{
-      background: #7E7E82;
-    } */
+    .chek {
+      background: white;
+    }
+
+    .chek h5 {
+      padding-top: 16px;
+      padding-left: 16px;
+      color: #7E7E82;
+      font-family: TT Lakes;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    .chek p {
+      padding-left: 16px;
+      color: #1B1C21;
+      font-family: TT Lakes;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    .chek span {
+      display: flex;
+      align-items: center;
+       padding-bottom: 16px;
+    }
+
+
+    .chek > span button {
+      border: none;
+      width: 120px;
+      height: 32px;
+      border-radius: 16px;
+      background: #FF3E79;
+      color: white;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      padding-left: 7%;
+       text-transform: uppercase;
+    }
+   
+    
 
     .main-info > p:first-child {
     color: #1B1C21;
