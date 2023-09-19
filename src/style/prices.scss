@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* цены на услуги       */
+body {
+  background: #F8F8F8;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2100px) {
+  .main-heder__pricesforservices {
+    margin-top: 51px;
+    background: #F8F8F8;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+  }
+  .main-pricelist__pricesforservices {
+    display: grid;
+    grid-template-columns: 2fr 0.8fr 0.8fr 0.5fr;
+    margin-left: 32px;
+    margin-bottom: 50px;
+    background: white;
+    /* border: 2px solid black; */
+    margin-right: 32px;
+  }
+  hr {
+    width: 150%;
+    margin-top: 23px;
+    background: #EAEAEA;
+  }
+  .one {
+    padding-left: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .two {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .three {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .four {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32px;
+    padding-right: 24px;
+  }
+  .four > p button {
+    margin-top: 33px;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .one > p, .two > p, .three > p {
+    padding-top: 23px;
+  }
+  .one p:first-child, .two p:first-child,
+  .three p:first-child {
+    padding-bottom: 16px;
+    color: #7E7E82;
+  }
+  .one p:last-child, .two p:last-child,
+  .three p:last-child {
+    padding-bottom: 23px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .main-heder__pricesforservices {
+    margin-top: 51px;
+    background: #F8F8F8;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+  }
+  .main-pricelist__pricesforservices {
+    display: grid;
+    /* width: 1400px; */
+    grid-template-columns: 2.2fr 1fr 0.8fr 0.9fr;
+    /* border: 2px solid black; */
+    /* background: grey; */
+    margin-left: 32px;
+    margin-bottom: 50px;
+    background: white;
+  }
+  hr {
+    width: 150%;
+    margin-top: 23px;
+    background: #EAEAEA;
+  }
+  .one {
+    padding-left: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .two {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .three {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .four {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32px;
+  }
+  .four > p button {
+    margin-top: 33px;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  .one > p, .two > p, .three > p {
+    padding-top: 23px;
+  }
+  .one p:first-child, .two p:first-child,
+  .three p:first-child {
+    padding-bottom: 16px;
+    color: #7E7E82;
+  }
+  .one p:last-child, .two p:last-child,
+  .three p:last-child {
+    padding-bottom: 23px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-heder__pricesforservices {
+    margin-top: 51px;
+    background: #F8F8F8;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    color: #7E7E82;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+  }
+  .main-heder__pricesforservices h3 {
+    color: #7E7E82;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduims";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+  .main-pricelist__pricesforservices {
+    display: grid;
+    grid-template-columns: 3.2fr 0.8fr 1fr 1fr;
+    margin-left: 24px;
+    margin-bottom: 50px;
+    background: white;
+    margin-right: 24px;
+    display: none;
+  }
+  .four > p button {
+    margin-top: 33px;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+  }
+  .swiper-wrapper > div {
+    height: 190px;
+    width: 260px;
+  }
+  .chek {
+    background: rgb(255, 255, 255);
+  }
+  .chek h5 {
+    padding-top: 16px;
+    padding-left: 16px;
+    color: #7E7E82;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .chek p {
+    padding-left: 16px;
+    width: 200px;
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .chek span {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+  .chek > span button {
+    /* margin-left: 10px; */
+    margin-right: 16px;
+    border: none;
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 8%;
+    text-transform: uppercase;
+  }
+  .main-info > p:first-child {
+    color: #1B1C21;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 14px;
+    font-style: normal;
+    width: 250px;
+    margin-left: 16px;
+    margin-top: 44px;
+  }
+  .main-info > p:last-child {
+    color: #1B1C21;
+    font-family: "TTLakesCompressed-Bold";
+    font-size: 16px;
+    font-style: normal;
+    width: 250px;
+    margin-left: 16px;
+    margin-top: 32px;
+  }
+  .main-footer {
+    margin-top: 57px;
+    margin-left: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info {
+    text-align: center;
+  }
+  .main-footer p {
+    color: #7E7E82;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 14px;
+    margin-top: 16px;
+  }
+  .main-footer > p:first-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=prices.css.map */

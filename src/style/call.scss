@@ -1,0 +1,175 @@
+/* call   */
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .header__call {
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 333;
+    right: 0;
+    width: 440px;
+    height: 100vh;
+    display: none;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+  .header-back__call {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-top: 32px;
+    margin-left: 100px;
+    right: 0;
+    margin-right: 472px;
+    margin-top: 32px;
+    /* display: none; */
+  }
+  .header-head__call {
+    display: flex;
+    margin-top: 32px;
+  }
+  .header-head__call h2 {
+    margin-left: 30px;
+    font-family: "TTLakesCompressed-Bold";
+  }
+  .header-input__call {
+    /* margin-top: 24px; */
+    margin-left: 31px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-input__call input {
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 376px;
+    height: 48px;
+    margin-top: 16px;
+  }
+  .header-text__call {
+    margin-top: 16px;
+    margin-left: 32px;
+    width: 380px;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-input__call input::-moz-placeholder {
+    padding-left: 16px;
+    color: #B5B6BC;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-input__call input::placeholder {
+    padding-left: 16px;
+    color: #B5B6BC;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-button__call {
+    margin-top: 27px;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    margin-right: 32px;
+  }
+  .header-button__call button {
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .header__call {
+    background: white;
+    opacity: 1;
+    position: absolute;
+    z-index: 333;
+    width: 320px;
+    height: 100vh;
+    display: none;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+  .header-back__call {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+  .header-head__call {
+    display: flex;
+    margin-top: 32px;
+  }
+  .header-head__call h2 {
+    margin-left: 30px;
+    font-family: "TTLakesCompressed-Bold";
+  }
+  .header-input__call {
+    /* margin-top: 24px; */
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-input__call input {
+    border-radius: 8px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    width: 288px;
+    height: 48px;
+    margin-top: 16px;
+  }
+  .header-text__call {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 280px;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-input__call input::-moz-placeholder {
+    padding-left: 16px;
+    color: #B5B6BC;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-input__call input::placeholder {
+    padding-left: 16px;
+    color: #B5B6BC;
+    font-family: "TTLakesCompressed-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .header-button__call {
+    margin-top: 19px;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    margin-right: 32px;
+  }
+  .header-button__call button {
+    width: 120px;
+    height: 32px;
+    border-radius: 16px;
+    background: #FF3E79;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "TTLakesCompressed-Meduim";
+  }
+}/*# sourceMappingURL=call.css.map */

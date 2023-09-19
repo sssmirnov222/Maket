@@ -1,22 +1,9 @@
+import '../scss/style.scss'
+import Swiper, { Pagination } from 'swiper';
+Swiper.use([Pagination]);
+
 let link = document.querySelectorAll(".main .main__link a");
 let link_index = document.querySelectorAll(".main .main__link a");
-let counter = 0;
-
-
-link_index.forEach(el => {
-  el.addEventListener("click", () => { 
-       link_index.forEach(e => {
-         console.log(e)
-         e.classList.remove("active")
-       })
-     el.classList.add("active")
-     
-      
-    
-  })
-})
-
-// модалка
 let modal = document.querySelector('.header__modal');
 let burger = document.querySelector('.wrapper .header .header__left .header-burger__left img')
 let exit = document.querySelector('.header__modal .header-head__modal .exit')
@@ -25,10 +12,35 @@ let text = document.querySelector('.wrapper .main .text');
 let body = document.body;
 let main = document.querySelector('.main');
 let header = document.querySelector('.header');
+let down = document.querySelector('.main__servicbrands .down');
+let up = document.querySelector('.main__servicbrands .up');
+let lenovo = document.querySelector('.main__servicbrands .main-devices .lenovo_two');
+let samsung = document.querySelector('.main__servicbrands .main-devices .Samsung_two');
+let apple = document.querySelector('.main__servicbrands .main-devices .Apple_two');
+let call = document.querySelector(".aside__modal .footer .aside-foot__modal .call")
+let feedback = document.querySelector(".header__feedback")
+let back = document.querySelector(".header-back__feedback")
+let callMod = document.querySelector('.header__modal .footer .header-foot__modal .callMod')
 
-console.log(text)
+
+let counter = 0;
 
 
+
+
+link_index.forEach(el => {
+  el.addEventListener("click", () => { 
+       link_index.forEach(e => {
+         console.log(e)
+         e.classList.remove("active")
+       })
+     el.classList.add("active")   
+  })
+})
+
+
+
+// модалка
 burger.addEventListener('click', () => {
    counter+=1;
    if(counter === 1) {
@@ -52,16 +64,10 @@ burger.addEventListener('click', () => {
    
 })
 
-console.log(CPS)
+
 
 
 // скрыть и показать элементы
-let down = document.querySelector('.main__servicbrands .down');
-let up = document.querySelector('.main__servicbrands .up');
-let lenovo = document.querySelector('.main__servicbrands .main-devices .lenovo_two');
-let samsung = document.querySelector('.main__servicbrands .main-devices .Samsung_two');
-let apple = document.querySelector('.main__servicbrands .main-devices .Apple_two');
-
 down.addEventListener("click", () => {
   counter+=1;
   if(counter === 1) {
@@ -84,6 +90,8 @@ up.addEventListener("click", () => {
     down.style.display = "flex";
    } 
 })
+
+
 
 
 //слайдер
@@ -121,15 +129,10 @@ let swiper = new Swiper('.swiper-container', {
 
 
 
+
+
+
 //feedback
-let call = document.querySelector(".aside__modal .footer .aside-foot__modal .call")
-console.log(call)
-let feedback = document.querySelector(".header__feedback")
-console.log(feedback)
-let back = document.querySelector(".header-back__feedback")
-console.log(back)
-
-
 call.addEventListener("click", () =>  {
   counter+=1;
   if(counter === 1) {
@@ -150,6 +153,7 @@ call.addEventListener("click", () =>  {
 
  }
 )
+
 
 
 
@@ -182,6 +186,7 @@ chat.addEventListener("click", () =>  {
 
  }
 )
+
 
 
 
@@ -219,7 +224,7 @@ listAs.forEach(el => {
 
 
 
-//переключение
+//переключение на модалке
 let listModal = document.querySelectorAll(".header__modal ul li a span");
 console.log(listModal)
 
@@ -249,9 +254,9 @@ list.forEach(el => {
 
 
 
-// показать feedback и call на 320
-let callMod = document.querySelector('.header__modal .footer .header-foot__modal .callMod')
 
+
+// показать feedback и call на 320
 callMod.addEventListener("click", () =>  {
   counter+=1;
   console.log(counter)
@@ -297,3 +302,6 @@ ChatMod.addEventListener("click", () =>  {
 
  }
 )
+
+
+// отимизация
