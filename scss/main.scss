@@ -1,0 +1,59 @@
+@import url("base.scss");
+@import url("modalWindow.scss");
+@import url("repairBrands.scss");
+@import url("repairTechniques.scss");
+@import url("prices.scss");
+@import url("footer.scss");
+@import url("feddback.scss");
+@import url("call.scss");
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  width: 100%;
+}
+
+// @font-face {
+//   font-family: "TTLakesCompressed-Black";
+//   src: url("/src/fonts/TTLakesCompressed-Black.ttf");
+// }
+// @font-face {
+//   font-family: "TTLakesCompressed-Medium";
+//   src: url("/src/fonts/TTLakes-Medium.ttf");
+// }
+// @font-face {
+//   font-family: "TTLakesCompressed-Bold";
+//   src: url("/src/fonts/TTLakesCondensed-Bold.ttf");
+// }
+.main-first__link {
+  border-radius: 6px;
+  box-sizing: content-box;
+  background: #fff;
+  padding: 8px 9px 8px 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-decoration: none;
+  color: #7e7e82;
+  font-size: 16px;
+  font-family: "TTLakesCompressed-Medium";
+}
+
+.header {
+  border-bottom: 1px solid #D9FFF5;
+}
+
+button {
+  border: none;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: 15px;
+  color: grey;
+}
+
+/* .main-pricelist__pricesforservices{
+     display: none;
+   } *//*# sourceMappingURL=style.css.map */
