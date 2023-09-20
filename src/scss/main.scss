@@ -1,11 +1,11 @@
-@import url("/src/scss/base.scss");
-@import url("/src/scss/modalWindow.scss");
-@import url("/src/scss/repairBrands.scss");
-@import url("/src/scss/repairTechniques.scss");
-@import url("/src/scss/prices.scss");
-@import url("/src/scss/footer.scss");
-@import url("/src/scss/feddback.scss");
-@import url("/src/scss/call.scss");
+@import url("base.scss");
+@import url("modalWindow.scss");
+@import url("repairBrands.scss");
+@import url("repairTechniques.scss");
+@import url("prices.scss");
+@import url("footer.scss");
+@import url("feddback.scss");
+@import url("call.scss");
 * {
   padding: 0;
   margin: 0;
@@ -16,18 +16,18 @@ body {
   width: 100%;
 }
 
-@font-face {
-  font-family: "TTLakesCompressed-Black";
-  src: url("/font/TTLakesCompressed-Black.ttf");
-}
-@font-face {
-  font-family: "TTLakesCompressed-Medium";
-  src: url("/font/TTLakes-Medium.ttf");
-}
-@font-face {
-  font-family: "TTLakesCompressed-Bold";
-  src: url("/font/TTLakesCondensed-Bold.ttf");
-}
+// @font-face {
+//   font-family: "TTLakesCompressed-Black";
+//   src: url("/src/fonts/TTLakesCompressed-Black.ttf");
+// }
+// @font-face {
+//   font-family: "TTLakesCompressed-Medium";
+//   src: url("/src/fonts/TTLakes-Medium.ttf");
+// }
+// @font-face {
+//   font-family: "TTLakesCompressed-Bold";
+//   src: url("/src/fonts/TTLakesCondensed-Bold.ttf");
+// }
 .main-first__link {
   border-radius: 6px;
   box-sizing: content-box;
