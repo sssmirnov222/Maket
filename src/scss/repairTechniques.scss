@@ -31,14 +31,48 @@
     padding-top: 16px;
     padding-left: 16px;
   }
-  .main-repair__technik div img {
-    padding-top: 64px;
-    padding-bottom: 16px;
-    margin-left: 190px;
-  }
+ 
   .down-technik {
     display: flex;
     padding-left: 24px;
+  }
+  .main-repair__technik {
+    display: flex;
+  }
+  .main-repair__technik_two, .main-repair__technik_three {
+    display: none;
+  }
+
+
+  .main-repair__technik div, .main-repair__technik_two div, .main-repair__technik_three div {
+    background: white;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    width: 224px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+  }
+  .main-repair__technik div h4,.main-repair__technik_two div h4, .main-repair__technik_three div h4 {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+  .main-repair__technik div img,.main-repair__technik_two div img, .main-repair__technik_three div img {
+    padding-top: 64px;
+    padding-bottom: 16px;
+    padding-left: 160px;
+    padding-right: 24px;
+  }
+  .down-technik,.up-technik {
+    display: flex;
+    padding-left: 24px;
+  }
+
+  .down-technik {
+    display: flex;
+  }
+  .up-technik {
+     display: none;
   }
 }
 .wrapper {
@@ -150,7 +184,12 @@
   .main-repair__technik {
     display: flex;
   }
-  .main-repair__technik div {
+  .main-repair__technik_two, .main-repair__technik_three {
+    display: none;
+  }
+
+
+  .main-repair__technik div, .main-repair__technik_two div, .main-repair__technik_three div {
     background: white;
     margin-left: 24px;
     margin-bottom: 24px;
@@ -159,19 +198,26 @@
     border-radius: 6px;
     border: 1px solid #EAEAEA;
   }
-  .main-repair__technik div h4 {
+  .main-repair__technik div h4,.main-repair__technik_two div h4, .main-repair__technik_three div h4 {
     padding-top: 16px;
     padding-left: 16px;
   }
-  .main-repair__technik div img {
+  .main-repair__technik div img,.main-repair__technik_two div img, .main-repair__technik_three div img {
     padding-top: 64px;
     padding-bottom: 16px;
     padding-left: 160px;
     padding-right: 24px;
   }
-  .down-technik {
+  .down-technik,.up-technik {
     display: flex;
     padding-left: 24px;
+  }
+
+  .down-technik {
+    display: flex;
+  }
+  .up-technik {
+     display: none;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 320px) {

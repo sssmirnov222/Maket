@@ -1,11 +1,12 @@
-@import url("base.scss");
-@import url("modalWindow.scss");
-@import url("repairBrands.scss");
-@import url("repairTechniques.scss");
-@import url("prices.scss");
-@import url("footer.scss");
-@import url("feddback.scss");
-@import url("call.scss");
+@import "base.scss";
+@import "modalWindow.scss";
+@import "repairBrands.scss";
+@import "repairTechniques.scss";
+@import "prices.scss";
+@import "footer.scss";
+@import "feddback.scss";
+@import "call.scss";
+@import '../../node_modules/swiper/swiper-bundle.min.css';
 * {
   padding: 0;
   margin: 0;
@@ -50,8 +51,16 @@ button {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  width: 15px;
   color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: grey;
+  width: 10px;
+  height: 10px;
 }
 
 /* .main-pricelist__pricesforservices{

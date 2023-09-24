@@ -100,9 +100,14 @@ up.addEventListener("click", () => {
 let swiper = new Swiper('.swiper-container', {
   //  slidesPerView: 2,
   //  slideClass: "slide",
+   direction: 'horizontal',
+   loop: true,
+   slidesPerView: 'auto',
+   spaceBetween: 16,
    pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true,
   },
 
   breakpoints: {
@@ -307,3 +312,64 @@ ChatMod.addEventListener("click", () =>  {
 
 
 // отимизация
+// Скрыть показать текст на 320-767
+let mainExpendRead = document.querySelector(".main .main__description  .main-expand__read");
+let mainUpRead = document.querySelector(".main .main__description .main-up__read");
+let mainTextDescription = document.querySelector(".main .main__description .main-text__description")
+let mainTextDescriptionSpan = document.querySelector(".main .main__description .main-text__description span")
+
+mainExpendRead.addEventListener("click",() => {
+
+   if(window.innerWidth < 767) {
+     mainTextDescriptionSpan.style.display = "block",
+     mainExpendRead.style.display = "none",
+     mainUpRead.style.display = "flex" 
+   } 
+    
+   if(768 < window.innerWidth < 1119) {
+    mainTextDescription.style.display = "block",
+    mainExpendRead.style.display = "none",
+    mainUpRead.style.display = "flex" 
+    mainTextDescriptionSpan.style.display = "inline"
+   }
+
+})
+
+mainUpRead.addEventListener("click",() => {
+
+  if(window.innerWidth < 768) { 
+  mainExpendRead.style.display = "flex",
+  mainUpRead.style.display = "none" 
+  }
+
+  if(768 < window.innerWidth < 1119) { 
+    mainExpendRead.style.display = "flex",
+    mainUpRead.style.display = "none" 
+    mainTextDescriptionSpan.style.display = "none"
+   }
+
+})
+
+//Скрыть и показать блоки
+let mainRepearOne = document.querySelector(".main .main__technik .main-repair__technik_two");
+let mainRepearTwo = document.querySelector(".main .main__technik .main-repair__technik_three");
+let upRepear = document.querySelector(".main  .main__technik .up-technik");
+let downRepear = document.querySelector(".main  .main__technik .down-technik");
+
+
+downRepear.addEventListener("click",() => {
+  if(window.innerWidth > 768) {
+     mainRepearOne.style.display = "flex",
+     mainRepearTwo.style.display = "flex",
+     upRepear.style.display = "flex",
+     downRepear.style.display = "none"
+  }
+ 
+})
+
+upRepear.addEventListener("click",() => {
+  mainRepearOne.style.display = "none",
+  mainRepearTwo.style.display = "none",
+  upRepear.style.display = "none",
+  downRepear.style.display = "flex"
+})

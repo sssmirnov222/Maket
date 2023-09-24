@@ -10,8 +10,8 @@
   .header-chekstatus__right > span,
   .header-right__separator,
   .main-status__server,
-  .aside__modal,
-  .main-text__description {
+  .aside__modal,.main-repair__technik_two,
+  .main-repair__technik_three,.up-technik{
     display: none;
   }
   .header,
@@ -90,6 +90,16 @@
     right: 0;
     z-index: 1;
   }
+
+  .main-text__description {
+    padding-left: 16px;
+    font-size: 14px;
+    width: 85%;
+    font-family: "TTLakesCompressed-Medium";
+    margin-top: 16px;
+    display: none;
+  }
+
   .main__description article div:first-child {
     padding-left: 16px;
     font-size: 14px;
@@ -107,12 +117,27 @@
     display: flex;
     padding: 16px;
   }
-  .main_read > h3 {
+
+  .main-expand__read,.main-up__read {
+     display: flex;
+  }
+
+  .main-expand__read {
+    display: flex;
+  }
+
+  .main-up__read {
+    display: none;
+  }
+
+  .main_read > .main-expand__read h3, .main-up__read h3 {
     margin-left: 8px;
     font-size: 16px;
     font-family: "TTLakesCompressed-Medium";
     font-weight: 500;
   }
+
+  
   .commercial {
     display: flex;
     margin-top: 16px;
@@ -128,6 +153,8 @@
     position: absolute;
   }
 }
+
+
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   .header-repair__right > span,
   .header-chekstatus__right > span,
@@ -233,6 +260,37 @@
     right: 0;
     z-index: 1;
   }
+
+  .main-text__description span{
+    padding-left: 16px;
+    font-size: 14px;
+    width: 85%;
+    font-family: "TTLakesCompressed-Medium";
+    margin-top: 16px;
+    display: none;
+  }
+
+  .main-expand__read,.main-up__read {
+    display: flex;
+ }
+
+ .main-expand__read {
+   display: flex;
+   align-items: center;
+ }
+
+ .main-up__read {
+   display: none;
+   align-items: center;
+ }
+
+ .main_read > .main-expand__read h3, .main-up__read h3 {
+  margin-left: 8px;
+  font-size: 16px;
+  font-family: "TTLakesCompressed-Medium";
+  font-weight: 500;
+}
+
   .main__description article div:first-child {
     padding-left: 24px;
     font-size: 14px;
@@ -449,6 +507,27 @@
     grid-row-end: 4;
     grid-column-start: 2;
   }
+
+  .main-expand__read,.main-up__read {
+    display: flex;
+ }
+
+ .main-expand__read {
+   display: none;
+   align-items: center;
+ }
+
+ .main-up__read {
+   display: flex;
+   align-items: center;
+ }
+
+ .main_read > .main-expand__read h3, .main-up__read h3 {
+  margin-left: 8px;
+  font-size: 16px;
+  font-family: "TTLakesCompressed-Medium";
+  font-weight: 500;
+}
   .main_read {
     display: flex;
     padding: 13px 16px 0px 16px;
