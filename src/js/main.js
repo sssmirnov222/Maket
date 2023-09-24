@@ -286,6 +286,33 @@ callMod.addEventListener("click", () =>  {
  }
 )
 
+//показать feedback и call на 768
+let rightCall = document.querySelector(".wrapper .header .header__right .header-info__right .rightCall");
+let rightChat = document.querySelector(".wrapper .header .header__right .header-info__right .rightChat");
+
+rightCall.addEventListener("click",() => {
+  counter+=1;
+  console.log(counter)
+  if(counter) {
+   feedback.style.display = "block" 
+   feedback.style.opacity = "1";
+   main.style.opacity = "0.1";
+   modal.style.opacity = "0.1";
+  }
+  
+  back.addEventListener("click", () => {
+  counter = 0;
+  if(counter === 0)  {
+   feedback.style.display = "none";
+   main.style.opacity = "1";
+   modal.style.opacity = "1";
+    }
+  })
+
+ })
+
+
+
 
 
 let ChatMod = document.querySelector('.header__modal .footer .header-foot__modal .ChatMod')
@@ -309,6 +336,25 @@ ChatMod.addEventListener("click", () =>  {
 
  }
 )
+
+rightChat.addEventListener("click",() => {
+  counter+=1;
+  if(counter) {
+   headerCall.style.display = "block" 
+   headerCall.style.opacity = "1";
+   main.style.opacity = "0.1";
+   modal.style.opacity = "0.1";
+  }
+  
+  headerBack.addEventListener("click", () => {
+  counter = 0;
+  if(counter === 0)  {
+   headerCall.style.display = "none";
+   main.style.opacity = "1";
+   modal.style.opacity = "1";
+    }
+  })
+ })
 
 
 // отимизация
@@ -358,7 +404,7 @@ let downRepear = document.querySelector(".main  .main__technik .down-technik");
 
 
 downRepear.addEventListener("click",() => {
-  if(window.innerWidth > 768) {
+  if(window.innerWidth > 767) {
      mainRepearOne.style.display = "flex",
      mainRepearTwo.style.display = "flex",
      upRepear.style.display = "flex",
@@ -373,3 +419,5 @@ upRepear.addEventListener("click",() => {
   upRepear.style.display = "none",
   downRepear.style.display = "flex"
 })
+
+

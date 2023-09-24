@@ -43,6 +43,10 @@
     display: none;
   }
 
+  .main-repair__technik div:hover,.main-repair__technik_two div:hover, .main-repair__technik_three div:hover {
+    background: rgb(202, 195, 195);
+    cursor: pointer;
+  }
 
   .main-repair__technik div, .main-repair__technik_two div, .main-repair__technik_three div {
     background: white;
@@ -188,6 +192,9 @@
     display: none;
   }
 
+  .main-repair__technik div:hover {
+    background: rgb(202, 195, 195);
+  }
 
   .main-repair__technik div, .main-repair__technik_two div, .main-repair__technik_three div {
     background: white;

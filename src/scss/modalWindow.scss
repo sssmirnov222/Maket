@@ -66,6 +66,7 @@
   .header-foot__modal img {
     width: 40px;
     margin-left: 16px;
+    cursor: pointer;
   }
   .header-mail__modal {
     margin-top: 16px;
@@ -73,6 +74,7 @@
     color: #1B1C21;
     font-family: "TTLakesCompressed-Medium";
     font-size: 16px;
+    cursor: pointer;
   }
   .header-phone__modal {
     margin-top: 12px;
@@ -80,17 +82,23 @@
     font-size: 24px;
     color: #1B1C21;
     font-family: "TTLakesCompressed-Bold";
+    cursor: pointer;
   }
   .header-lang__modal {
     margin-top: 40px;
     margin-bottom: 32px;
     margin-left: 24px;
+    cursor: pointer;
   }
   .header-lang__modal button {
     border: none;
     background: white;
     margin-bottom: 20px;
     border: none;
+    cursor: pointer;
+  }
+  .header-lang__modal button:hover {
+    scale: 1.2;
   }
   .header-lang__modal button:first-child {
     color: #7E7E82;
@@ -374,13 +382,16 @@
   .aside-foot__modal img {
     width: 40px;
     margin-left: 16px;
+    cursor: pointer;
   }
+ 
   .aside-mail__modal {
     margin-top: 16px;
     margin-left: 24px;
     color: #1B1C21;
     font-family: "TTLakesCompressed-Medium";
     font-size: 16px;
+    cursor: pointer;
   }
   .aside-phone__modal {
     margin-top: 12px;
@@ -388,17 +399,23 @@
     font-size: 24px;
     color: #1B1C21;
     font-family: "TTLakesCompressed-Bold";
+    cursor: pointer;
   }
   .aside-lang__modal {
     margin-top: 40px;
     margin-bottom: 32px;
     margin-left: 24px;
+    cursor: pointer;
   }
   .aside-lang__modal button {
     border: none;
     background: white;
     margin-bottom: 20px;
     border: none;
+    cursor: pointer;
+  }
+  .aside-lang__modal button:hover {
+    scale: 1.2;
   }
   .aside-lang__modal button:first-child {
     color: #7E7E82;
