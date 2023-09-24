@@ -24,6 +24,11 @@
     align-items: center;
     position: relative;
   }
+
+  .swiper-wrapper > .slide:hover {
+    background: rgb(202, 195, 195);
+    cursor: pointer;
+  }
   .swiper-wrapper {
     padding-bottom: 36px;
   }
